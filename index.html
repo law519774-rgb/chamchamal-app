@@ -1,1 +1,21 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ku">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>پەیمانگای کۆمپیوتەری چەمچەماڵ</title>
+<script>
+fetch('link.txt?t=' + Date.now())
+  .then(r => r.text())
+  .then(url => {
+    url = url.trim();
+    if (url.startsWith('http')) location.href = url + '/login';
+    else document.body.innerHTML = '<h2 style="text-align:center;margin-top:80px;font-family:sans-serif;color:#fff">⛔ سیستەم لە ئێستادا داخراوە</h2>';
+  });
+</script>
+</head>
+<body style="background:#0f172a;color:#fff;text-align:center;padding-top:80px;font-family:sans-serif">
+<h3>⏳ تکایە چاوەڕێ بکە...</h3>
+</body>
+</html>
 
